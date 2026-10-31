@@ -1,0 +1,11 @@
+You are continuing an existing, carefully art-directed personal portfolio called Choyonverse. Read README.md and docs/AI_STUDIO_HANDOFF.md first. Treat this repository as the source of truth; do not replace it with a fresh template.
+
+The design is editorial, warm and restrained: charcoal, oxblood, aged ivory, Playfair Display, DM Sans and DM Mono. It uses the owner's three supplied portraits. The first café portrait is the main hero image and the source of the 1200x630 social share preview. The interface must feel deliberately art-directed and human, never like a generic AI-generated portfolio.
+
+Keep React + TypeScript + Vite. Keep Lenis from `lenis/react`, GSAP + ScrollTrigger + `@gsap/react`, and Framer Motion. Do not add Three.js, WebGL, heavy shaders or competing animation libraries. Keep custom CSS. Preserve responsive layouts, accessible controls and reduced-motion support.
+
+Projects are data-driven from `src/data/projects.ts`; profile and contact details are in `src/data/profile.ts` and `src/data/socials.ts`. Do not invent project outcomes, experience years, awards, clients or usage metrics. Keep the GitHub-first content workflow and do not create a fake client-only admin password. A private Admin Dashboard is a later phase and must use real server-side authentication and authorization.
+
+Social sharing is important: retain Open Graph and Twitter large-image metadata in `index.html`, pointing at `https://choyon.dev/og/og-image.jpg`. Keep the image at 1200x630 and publicly reachable after deployment. Canonical and metadata URLs should be updated together only if the owner changes domain.
+
+Make only requested changes. Before finishing, run `npm run typecheck` and `npm run build`, fix all issues, and report files changed.
