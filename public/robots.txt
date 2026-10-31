@@ -1,3 +1,12 @@
 User-agent: *
 Allow: /
+
+# ChatGPT search discovery (separate from model-training crawling)
+User-agent: OAI-SearchBot
+Allow: /
+
+# Model-training crawler is disallowed by default
+User-agent: GPTBot
+Disallow: /
+
 Sitemap: https://choyon.dev/sitemap.xml
